@@ -1,4 +1,4 @@
-﻿using DesignPatterns.Curso.PatternsCriacao.FactoryMethod;
+﻿using DesignPatterns.Curso.PatternsCriacao.AbstractFactory;
 
 internal class Program
 {
@@ -8,9 +8,17 @@ internal class Program
 
         #region FactoryMethod
 
-        var client = new Client();
-        client.ExecutarCriacaoProduto();
+        // var client = new Client();
+        // client.ExecutarCriacaoProduto();
         
+        #endregion
+
+        
+        #region AbstractFactory
+
+        var client = new Client();
+        client.ConsultarRotinaAluno();
+
         #endregion
 
 
