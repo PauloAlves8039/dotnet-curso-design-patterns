@@ -9,6 +9,12 @@
 
 Repositório com projetos `Console Application` voltados para estudos sobre `Design Patterns`.
 
+## :heavy_check_mark: Recursos Utilizados
+
+- ``.NET 8``
+- ``Console Application``
+- ``C#``
+
 ## :floppy_disk: Clonar Repositório
 
 ```bash
