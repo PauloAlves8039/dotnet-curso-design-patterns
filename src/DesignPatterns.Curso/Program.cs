@@ -1,4 +1,5 @@
-﻿using DesignPatterns.Curso.PatternsCriacao.AbstractFactory;
+﻿// using DesignPatterns.Curso.PatternsCriacao.AbstractFactory;
+using DesignPatterns.Curso.PatternsCriacao.Singleton;
 
 internal class Program
 {
@@ -16,11 +17,17 @@ internal class Program
         
         #region AbstractFactory
 
-        var client = new Client();
-        client.ConsultarRotinaAluno();
+        // var client = new Client();
+        // client.ConsultarRotinaAluno();
 
         #endregion
 
+        #region Singleton
+
+        var client = new Client();
+        client.ConsumirDB();
+
+        #endregion
 
         Console.ReadKey();
     }
