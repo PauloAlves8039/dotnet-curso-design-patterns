@@ -1,6 +1,7 @@
 ﻿// using DesignPatterns.Curso.PatternsCriacao.AbstractFactory;
 // using DesignPatterns.Curso.PatternsCriacao.Singleton;
-using DesignPatterns.Curso.PatternsCriacao.Builder;
+// using DesignPatterns.Curso.PatternsCriacao.Builder;
+using DesignPatterns.Curso.PatternsCriacao.Prototype;
 
 internal class Program
 {
@@ -32,11 +33,17 @@ internal class Program
 
         #region Builder
 
-        var client = new Client();
-        client.ConsumirDadosStudios();
+        // var client = new Client();
+        // client.ConsumirDadosStudios();
 
         #endregion
 
+        #region Prototype
+
+        var cliente = new Cliente();
+        cliente.ConsumirDadosStudios();
+
+        #endregion
         Console.ReadKey();
     }
 }
