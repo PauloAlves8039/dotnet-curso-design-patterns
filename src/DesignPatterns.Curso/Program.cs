@@ -1,7 +1,9 @@
 ﻿// using DesignPatterns.Curso.PatternsCriacao.AbstractFactory;
 // using DesignPatterns.Curso.PatternsCriacao.Singleton;
 // using DesignPatterns.Curso.PatternsCriacao.Builder;
-using DesignPatterns.Curso.PatternsCriacao.Prototype;
+// using DesignPatterns.Curso.PatternsCriacao.Prototype;
+
+using DesignPatterns.Curso.PatternsEstrutural.Adapter;
 
 internal class Program
 {
@@ -40,10 +42,18 @@ internal class Program
 
         #region Prototype
 
-        var cliente = new Cliente();
-        cliente.ConsumirDadosStudios();
+        // var cliente = new Cliente();
+        // cliente.ConsumirDadosStudios();
 
         #endregion
+        
+        #region Adapter
+
+        var cloud = new CloudComputing();
+        cloud.ProcessarContas("setembro");
+
+        #endregion
+
         Console.ReadKey();
     }
 }
