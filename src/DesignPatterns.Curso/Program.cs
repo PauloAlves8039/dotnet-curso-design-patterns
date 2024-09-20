@@ -2,8 +2,8 @@
 // using DesignPatterns.Curso.PatternsCriacao.Singleton;
 // using DesignPatterns.Curso.PatternsCriacao.Builder;
 // using DesignPatterns.Curso.PatternsCriacao.Prototype;
-
-using DesignPatterns.Curso.PatternsEstrutural.Adapter;
+// using DesignPatterns.Curso.PatternsEstrutural.Adapter;
+using DesignPatterns.Curso.PatternsEstrutural.Flyweight;
 
 internal class Program
 {
@@ -49,11 +49,18 @@ internal class Program
         
         #region Adapter
 
-        var cloud = new CloudComputing();
-        cloud.ProcessarContas("setembro");
+        // var cloud = new CloudComputing();
+        // cloud.ProcessarContas("setembro");
 
         #endregion
 
+        #region Flyweight
+
+        var client = new Client();
+        client.ConsumirFlayweight();
+
+        #endregion
+        
         Console.ReadKey();
     }
 }
