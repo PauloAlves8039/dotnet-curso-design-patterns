@@ -7,7 +7,13 @@
 
 ## :computer: Projeto
 
-Repositório com projetos `Console Application` voltados para estudos sobre `Design Patterns`.
+Repositório com projetos `Console Application` voltados para estudos sobre `Design Patterns`, são utilziados padroões do tipo `Criação`, `Estrutural` e `Comportamental`. 
+
+O código fonte do projeto foi baseado no curso [Curso Design Patterns com C#](https://www.udemy.com/course/design-patterns-com-c/).
+
+## :white_check_mark: Decisões Técnicas
+
+Procurei manter o mesmo tipo de estrutura da aplicação similar ao que foi apresentada durante o curso. 
 
 ## :heavy_check_mark: Recursos Utilizados
 
