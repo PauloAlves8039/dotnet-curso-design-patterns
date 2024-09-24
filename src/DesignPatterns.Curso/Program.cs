@@ -4,10 +4,11 @@
 // using DesignPatterns.Curso.PatternsCriacao.Prototype;
 // using DesignPatterns.Curso.PatternsEstrutural.Adapter;
 // using DesignPatterns.Curso.PatternsEstrutural.Flyweight;
+// using DesignPatterns.Curso.PatternsEstrutural.Bridge;
+// using DesignPatterns.Curso.PatternsEstrutural.Bridge.Abrtracao;
+// using DesignPatterns.Curso.PatternsEstrutural.Bridge.Implementacao;
 
-using DesignPatterns.Curso.PatternsEstrutural.Bridge;
-using DesignPatterns.Curso.PatternsEstrutural.Bridge.Abrtracao;
-using DesignPatterns.Curso.PatternsEstrutural.Bridge.Implementacao;
+using DesignPatterns.Curso.PatternsEstrutural.Composite;
 
 internal class Program
 {
@@ -67,49 +68,56 @@ internal class Program
         
         #region Bridge
 
-        Client client;
-        Random random;
+        // Client client;
+        // Random random;
 
-        while (true) 
-        {
-            client = new Client();
-            random = new Random();
+        // while (true) 
+        // {
+        //     client = new Client();
+        //     random = new Random();
 
-            if (random.Next(2) == 1) 
-            {
-                client.Material = new CanetaEsferografica();
-            }
-            else 
-            {
-                client.Material = new PincelMarcador();
-            }
+        //     if (random.Next(2) == 1) 
+        //     {
+        //         client.Material = new CanetaEsferografica();
+        //     }
+        //     else 
+        //     {
+        //         client.Material = new PincelMarcador();
+        //     }
 
-            if (random.Next(1, 3) == 1) 
-            {
-                client.Material.CorImplementacao = new Azul();
-            }
-            else if (random.Next(1, 3) == 2) 
-            {
-                client.Material.CorImplementacao = new Preto();
-            }
-            else 
-            {
-                client.Material.CorImplementacao = new Vermelho();
-            }
+        //     if (random.Next(1, 3) == 1) 
+        //     {
+        //         client.Material.CorImplementacao = new Azul();
+        //     }
+        //     else if (random.Next(1, 3) == 2) 
+        //     {
+        //         client.Material.CorImplementacao = new Preto();
+        //     }
+        //     else 
+        //     {
+        //         client.Material.CorImplementacao = new Vermelho();
+        //     }
 
-            client.ConsultarCanetasPinceisNoEstoque();
+        //     client.ConsultarCanetasPinceisNoEstoque();
             
-            Console.WriteLine("Pressione enter para continuar ou qualquer tecla finalizar...");
-            ConsoleKeyInfo key = Console.ReadKey();
+        //     Console.WriteLine("Pressione enter para continuar ou qualquer tecla finalizar...");
+        //     ConsoleKeyInfo key = Console.ReadKey();
 
-            if (key.KeyChar != 13) 
-            {
-                break;
-            }
-        }
+        //     if (key.KeyChar != 13) 
+        //     {
+        //         break;
+        //     }
+        // }
 
         #endregion
         
-        // Console.ReadKey();
+        #region Composite
+
+        var client = new Client();
+        client.EfetuarCompra();
+
+        #endregion
+        
+        Console.ReadKey();
     }
 }
