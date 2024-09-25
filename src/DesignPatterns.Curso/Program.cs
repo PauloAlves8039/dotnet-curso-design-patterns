@@ -7,8 +7,9 @@
 // using DesignPatterns.Curso.PatternsEstrutural.Bridge;
 // using DesignPatterns.Curso.PatternsEstrutural.Bridge.Abrtracao;
 // using DesignPatterns.Curso.PatternsEstrutural.Bridge.Implementacao;
+// using DesignPatterns.Curso.PatternsEstrutural.Composite;
 
-using DesignPatterns.Curso.PatternsEstrutural.Composite;
+using DesignPatterns.Curso.PatternsEstrutural.Decorator;
 
 internal class Program
 {
@@ -113,11 +114,18 @@ internal class Program
         
         #region Composite
 
-        var client = new Client();
-        client.EfetuarCompra();
+        // var client = new Client();
+        // client.EfetuarCompra();
 
         #endregion
         
+        #region Decorator
+
+        var client = new Client();
+        client.ConsumirServicos();
+
+        #endregion
+
         Console.ReadKey();
     }
 }
