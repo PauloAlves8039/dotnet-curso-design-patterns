@@ -8,8 +8,9 @@
 // using DesignPatterns.Curso.PatternsEstrutural.Bridge.Abrtracao;
 // using DesignPatterns.Curso.PatternsEstrutural.Bridge.Implementacao;
 // using DesignPatterns.Curso.PatternsEstrutural.Composite;
+// using DesignPatterns.Curso.PatternsEstrutural.Decorator;
 
-using DesignPatterns.Curso.PatternsEstrutural.Decorator;
+using DesignPatterns.Curso.PatternsEstrutural.Facade;
 
 internal class Program
 {
@@ -121,8 +122,15 @@ internal class Program
         
         #region Decorator
 
-        var client = new Client();
-        client.ConsumirServicos();
+        // var client = new Client();
+        // client.ConsumirServicos();
+
+        #endregion
+
+        #region Facade
+
+        var facade = new FacadeManager();
+        facade.ExecutarComplexidade();
 
         #endregion
 
