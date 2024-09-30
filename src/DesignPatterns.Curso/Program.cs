@@ -9,8 +9,10 @@
 // using DesignPatterns.Curso.PatternsEstrutural.Bridge.Implementacao;
 // using DesignPatterns.Curso.PatternsEstrutural.Composite;
 // using DesignPatterns.Curso.PatternsEstrutural.Decorator;
+// using DesignPatterns.Curso.PatternsEstrutural.Facade;
 
-using DesignPatterns.Curso.PatternsEstrutural.Facade;
+
+using DesignPatterns.Curso.PatternsEstrutural.Proxy;
 
 internal class Program
 {
@@ -129,11 +131,18 @@ internal class Program
 
         #region Facade
 
-        var facade = new FacadeManager();
-        facade.ExecutarComplexidade();
+        // var facade = new FacadeManager();
+        // facade.ExecutarComplexidade();
 
         #endregion
 
-        Console.ReadKey();
+        #region Proxy
+
+        var client = new Client();
+        client.TentarConexaoClientVPN();
+
+        #endregion
+        
+        // Console.ReadKey();
     }
 }
