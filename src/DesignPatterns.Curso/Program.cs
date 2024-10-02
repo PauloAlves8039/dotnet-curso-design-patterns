@@ -10,9 +10,8 @@
 // using DesignPatterns.Curso.PatternsEstrutural.Composite;
 // using DesignPatterns.Curso.PatternsEstrutural.Decorator;
 // using DesignPatterns.Curso.PatternsEstrutural.Facade;
-
-
-using DesignPatterns.Curso.PatternsEstrutural.Proxy;
+// using DesignPatterns.Curso.PatternsEstrutural.Proxy;
+using DesignPatterns.Curso.PatternsComportamenatal.TemplateMethod;
 
 internal class Program
 {
@@ -145,9 +144,11 @@ internal class Program
         
         #region Templat Method
 
-        
+        var client = new Client();
+        client.ConsumirEndpointXML();
 
         #endregion
+
         // Console.ReadKey();
     }
 }

@@ -1,4 +1,3 @@
-using System.Net.Mail;
 using System.Xml.Serialization;
 using DesignPatterns.Curso.PatternsComportamenatal.TemplateMethod.Models;
 using Newtonsoft.Json;
