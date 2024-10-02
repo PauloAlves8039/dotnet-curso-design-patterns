@@ -138,11 +138,16 @@ internal class Program
 
         #region Proxy
 
-        var client = new Client();
-        client.TentarConexaoClientVPN();
+        // var client = new Client();
+        // client.TentarConexaoClientVPN();
 
         #endregion
         
+        #region Templat Method
+
+        
+
+        #endregion
         // Console.ReadKey();
     }
 }
