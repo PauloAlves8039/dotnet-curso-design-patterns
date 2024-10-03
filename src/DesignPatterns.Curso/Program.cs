@@ -11,7 +11,9 @@
 // using DesignPatterns.Curso.PatternsEstrutural.Decorator;
 // using DesignPatterns.Curso.PatternsEstrutural.Facade;
 // using DesignPatterns.Curso.PatternsEstrutural.Proxy;
-using DesignPatterns.Curso.PatternsComportamenatal.TemplateMethod;
+// using DesignPatterns.Curso.PatternsComportamenatal.TemplateMethod;
+
+using DesignPatterns.Curso.PatternsComportamenatal.Interpreter.Jumanji;
 
 internal class Program
 {
@@ -144,11 +146,18 @@ internal class Program
         
         #region Templat Method
 
-        var client = new Client();
-        client.ConsumirEndpointXML();
+        // var client = new Client();
+        // client.ConsumirEndpointXML();
 
         #endregion
 
+        #region Templat Method
+
+        var apresentaPopup = new ApresentaPopup();
+        apresentaPopup.ApresentarHabilidadesPopup();
+
+        #endregion
+        
         // Console.ReadKey();
     }
 }
