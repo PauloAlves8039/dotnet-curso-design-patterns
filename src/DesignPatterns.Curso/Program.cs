@@ -12,8 +12,9 @@
 // using DesignPatterns.Curso.PatternsEstrutural.Facade;
 // using DesignPatterns.Curso.PatternsEstrutural.Proxy;
 // using DesignPatterns.Curso.PatternsComportamenatal.TemplateMethod;
+// using DesignPatterns.Curso.PatternsComportamenatal.Interpreter.Jumanji;
 
-using DesignPatterns.Curso.PatternsComportamenatal.Interpreter.Jumanji;
+using DesignPatterns.Curso.PatternsComportamenatal.Observer;
 
 internal class Program
 {
@@ -151,10 +152,17 @@ internal class Program
 
         #endregion
 
-        #region Templat Method
+        #region Interpreter
 
-        var apresentaPopup = new ApresentaPopup();
-        apresentaPopup.ApresentarHabilidadesPopup();
+        // var apresentaPopup = new ApresentaPopup();
+        // apresentaPopup.ApresentarHabilidadesPopup();
+
+        #endregion
+
+        #region Observer
+
+        var sendEmail = new SendMail();
+        sendEmail.EnviarEmail();
 
         #endregion
         
