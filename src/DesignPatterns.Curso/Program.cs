@@ -11,10 +11,11 @@
 // using DesignPatterns.Curso.PatternsEstrutural.Decorator;
 // using DesignPatterns.Curso.PatternsEstrutural.Facade;
 // using DesignPatterns.Curso.PatternsEstrutural.Proxy;
-// using DesignPatterns.Curso.PatternsComportamenatal.TemplateMethod;
-// using DesignPatterns.Curso.PatternsComportamenatal.Interpreter.Jumanji;
+// using DesignPatterns.Curso.PatternsComportamental.TemplateMethod;
+// using DesignPatterns.Curso.PatternsComportamental.Interpreter.Jumanji;
+// using DesignPatterns.Curso.PatternsComportamental.Observer;
 
-using DesignPatterns.Curso.PatternsComportamental.Observer;
+using DesignPatterns.Curso.PatternsComportamental.Visitor;
 
 internal class Program
 {
@@ -29,7 +30,6 @@ internal class Program
         
         #endregion
 
-        
         #region AbstractFactory
 
         // var client = new Client();
@@ -161,8 +161,15 @@ internal class Program
 
         #region Observer
 
-        var sendEmail = new SendMail();
-        sendEmail.EnviarEmail();
+        // var sendEmail = new SendMail();
+        // sendEmail.EnviarEmail();
+
+        #endregion
+
+        #region Visitor
+
+        var fiscal = new Fiscal();
+        fiscal.CalcularImpostos();
 
         #endregion
         
