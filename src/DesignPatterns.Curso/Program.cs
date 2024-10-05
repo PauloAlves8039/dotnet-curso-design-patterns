@@ -14,7 +14,7 @@
 // using DesignPatterns.Curso.PatternsComportamenatal.TemplateMethod;
 // using DesignPatterns.Curso.PatternsComportamenatal.Interpreter.Jumanji;
 
-using DesignPatterns.Curso.PatternsComportamenatal.Observer;
+using DesignPatterns.Curso.PatternsComportamental.Observer;
 
 internal class Program
 {
