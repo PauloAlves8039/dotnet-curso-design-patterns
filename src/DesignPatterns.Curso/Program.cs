@@ -14,8 +14,9 @@
 // using DesignPatterns.Curso.PatternsComportamental.TemplateMethod;
 // using DesignPatterns.Curso.PatternsComportamental.Interpreter.Jumanji;
 // using DesignPatterns.Curso.PatternsComportamental.Observer;
+// using DesignPatterns.Curso.PatternsComportamental.Visitor;
 
-using DesignPatterns.Curso.PatternsComportamental.Visitor;
+using DesignPatterns.Curso.PatternsComportamental.Command;
 
 internal class Program
 {
@@ -168,8 +169,15 @@ internal class Program
 
         #region Visitor
 
-        var fiscal = new Fiscal();
-        fiscal.CalcularImpostos();
+        // var fiscal = new Fiscal();
+        // fiscal.CalcularImpostos();
+
+        #endregion
+
+        #region Visitor
+
+        var client = new Client();
+        client.FalarComandos();
 
         #endregion
         
