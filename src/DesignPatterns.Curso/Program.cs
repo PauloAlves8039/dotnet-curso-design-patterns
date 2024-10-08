@@ -15,8 +15,9 @@
 // using DesignPatterns.Curso.PatternsComportamental.Interpreter.Jumanji;
 // using DesignPatterns.Curso.PatternsComportamental.Observer;
 // using DesignPatterns.Curso.PatternsComportamental.Visitor;
+// using DesignPatterns.Curso.PatternsComportamental.Command;
 
-using DesignPatterns.Curso.PatternsComportamental.Command;
+using DesignPatterns.Curso.PatternsComportamental.Strategy;
 
 internal class Program
 {
@@ -176,11 +177,18 @@ internal class Program
 
         #region Visitor
 
-        var client = new Client();
-        client.FalarComandos();
+        // var client = new Client();
+        // client.FalarComandos();
 
         #endregion
         
+        #region Strategy
+
+        var rotina = new RotinaTaxaServicos();
+        rotina.ExecutarRotina();
+
+        #endregion
+
         // Console.ReadKey();
     }
 }
