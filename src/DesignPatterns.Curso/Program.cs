@@ -16,8 +16,9 @@
 // using DesignPatterns.Curso.PatternsComportamental.Observer;
 // using DesignPatterns.Curso.PatternsComportamental.Visitor;
 // using DesignPatterns.Curso.PatternsComportamental.Command;
+// using DesignPatterns.Curso.PatternsComportamental.Strategy;
 
-using DesignPatterns.Curso.PatternsComportamental.Strategy;
+using DesignPatterns.Curso.PatternsComportamental.ChainOfResponsability;
 
 internal class Program
 {
@@ -184,8 +185,15 @@ internal class Program
         
         #region Strategy
 
-        var rotina = new RotinaTaxaServicos();
-        rotina.ExecutarRotina();
+        // var rotina = new RotinaTaxaServicos();
+        // rotina.ExecutarRotina();
+
+        #endregion
+
+        #region Chain Of Responsability
+
+        var sender = new Sender();
+        sender.RealizarCheckOut();
 
         #endregion
 
