@@ -17,8 +17,9 @@
 // using DesignPatterns.Curso.PatternsComportamental.Visitor;
 // using DesignPatterns.Curso.PatternsComportamental.Command;
 // using DesignPatterns.Curso.PatternsComportamental.Strategy;
+// using DesignPatterns.Curso.PatternsComportamental.ChainOfResponsability;
 
-using DesignPatterns.Curso.PatternsComportamental.ChainOfResponsability;
+using DesignPatterns.Curso.PatternsComportamental.Iterator;
 
 internal class Program
 {
@@ -192,8 +193,15 @@ internal class Program
 
         #region Chain Of Responsability
 
-        var sender = new Sender();
-        sender.RealizarCheckOut();
+        // var sender = new Sender();
+        // sender.RealizarCheckOut();
+
+        #endregion
+
+        #region Iterator
+
+        var client = new Client();
+        client.CosumirEstrutaDados();
 
         #endregion
 
