@@ -18,8 +18,8 @@
 // using DesignPatterns.Curso.PatternsComportamental.Command;
 // using DesignPatterns.Curso.PatternsComportamental.Strategy;
 // using DesignPatterns.Curso.PatternsComportamental.ChainOfResponsability;
-
-using DesignPatterns.Curso.PatternsComportamental.Iterator;
+// using DesignPatterns.Curso.PatternsComportamental.Iterator;
+using DesignPatterns.Curso.PatternsComportamental.Mediator;
 
 internal class Program
 {
@@ -200,8 +200,15 @@ internal class Program
 
         #region Iterator
 
-        var client = new Client();
-        client.CosumirEstrutaDados();
+        // var client = new Client();
+        // client.CosumirEstrutaDados();
+
+        #endregion
+
+        #region Mediator
+
+        var chat = new Chat();
+        chat.Conversar();
 
         #endregion
 
