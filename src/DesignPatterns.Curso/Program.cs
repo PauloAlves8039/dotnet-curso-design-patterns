@@ -20,8 +20,8 @@
 // using DesignPatterns.Curso.PatternsComportamental.ChainOfResponsability;
 // using DesignPatterns.Curso.PatternsComportamental.Iterator;
 // using DesignPatterns.Curso.PatternsComportamental.Mediator;
-
-using DesignPatterns.Curso.PatternsComportamental.Memento;
+// using DesignPatterns.Curso.PatternsComportamental.Memento;
+using DesignPatterns.Curso.PatternsComportamental.State;
 
 internal class Program
 {
@@ -214,10 +214,17 @@ internal class Program
 
         #endregion
 
-        #region Mediator
+        #region Memento
 
-        var videocassete = new Videocassete();
-        videocassete.ExecutarAcaoVideo();
+        // var videocassete = new Videocassete();
+        // videocassete.ExecutarAcaoVideo();
+
+        #endregion
+
+        #region State
+
+        var client = new Client();
+        client.ExecutarContext();
 
         #endregion
 
