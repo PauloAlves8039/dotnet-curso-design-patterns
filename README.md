@@ -21,6 +21,40 @@ Procurei manter o mesmo tipo de estrutura da aplicação similar ao que foi apre
 - ``Console Application``
 - ``C#``
 
+## :wrench: Padrões Utilizados
+
+### :blue_book: Padrões de Projeto Criacionais
+
+- ``Abstract Factory``
+- ``Builder``
+- ``Factory Method``
+- ``Prototype``
+- ``Singleton``
+
+### :blue_book: Padrões de Projeto Estruturais
+
+- ``Adapter``
+- ``Bridge``
+- ``Composite``
+- ``Decorator``
+- ``Facade``
+- ``Flyweight``
+- ``Proxy``
+
+### :blue_book: Padrões de Projeto Comportamentais 
+
+- ``Chain Of Responsability``
+- ``Command``
+- ``Interpreter``
+- ``Iterator``
+- ``Mediator``
+- ``Memento``
+- ``Observer``
+- ``State``
+- ``Strategy``
+- ``Template Method``
+- ``Visitor``
+
 ## :floppy_disk: Clonar Repositório
 
 ```bash
